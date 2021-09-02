@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Modern";
+    src: url("./Modern\ No.\ 20.ttf");
+}
+
+body {
+    display: grid;
+    font-family: "Modern","Times New Roman", serif;
+    background-color: #5c5bc4;
+}
+
+nav {
+    grid-area: bar;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    grid-area: title;
+}
+
+h1 {
+    font-size: 4rem;
+}

@@ -1,0 +1,40 @@
+body{
+    
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 50px 200px auto;
+    grid-template-areas: 
+    "title title"
+    "bar bar"
+    "details details"
+    "photo cv"
+    ;
+    height: 100vh;
+}
+
+ol {
+    grid-area: details;
+}
+
+#photo img, #cv img {
+    max-height: 208.5px;
+}
+
+#photo {
+    grid-area: photo;
+}
+
+#cv {
+    grid-area: cv;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cv h3 {
+    position: relative;
+    bottom: 50%;
+}
+
+img {
+    width: 100%;
+}

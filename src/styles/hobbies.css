@@ -1,0 +1,27 @@
+
+
+
+body{
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px auto;
+    grid-template-areas: 
+    "title"
+    "bar"
+    "article";
+}
+
+div {
+    grid-area:article;
+}
+
+.bike{
+    width: 400px;
+}
+
+.pd{
+    width: 350px;
+}
+
+div{
+    justify-content: center;
+}

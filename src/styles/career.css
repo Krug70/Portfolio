@@ -1,0 +1,16 @@
+body{
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px auto;
+    grid-template-areas: 
+    "title"
+    "bar"
+    "achievements";
+    height: 100vh;
+}
+
+img {
+    height: 208.5px;
+}
+main  {
+    grid-area: achievements;
+}
