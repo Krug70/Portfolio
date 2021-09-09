@@ -1,8 +1,10 @@
+/* max size of the pictures */
 img {
     max-height: 200px;
     max-width: 200px;
 }
 
+/* display of the blog articles in a column */
 body{
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px auto;
@@ -16,16 +18,36 @@ body{
     grid-area: blog;
 }
 
+/* cenetring of the article */
 article {
-    
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
+
+/* centering of the date on the singlo blog inputs */
 time {
     display: block;
     align-items: center;
 }
 
-.input {
+#input h2 {
+    display: inline;
+}
 
+/* media query to adapt content to tablets and pc */
+@media only screen and (min-width: 600px) {
+img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+p {
+    width: 100%;
+}
+
+h2, time, p, strong {
+    font-size: 2rem;
+}
 }

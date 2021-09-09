@@ -1,3 +1,4 @@
+/* displays the elements in the page */
 body{
     
     grid-template-columns: 50% 50%;
@@ -15,12 +16,19 @@ ol {
     grid-area: details;
 }
 
+/* height og the two images of the page */
 #photo img, #cv img {
     max-height: 208.5px;
+    /* max-width: 140px; */
+   
+    
 }
 
+/* positioning of the pitures */
 #photo {
     grid-area: photo;
+    
+
 }
 
 #cv {
@@ -30,11 +38,41 @@ ol {
     justify-content: center;
 }
 
-#cv h3 {
-    position: relative;
-    bottom: 50%;
+#cv a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-img {
-    width: 100%;
+#cv h3 {
+    position: relative;
+    bottom: 30%;
 }
+
+/* doesn't allow the picture to stretch */
+img {
+    width: initial;
+}
+
+/* responsive design for tablets and computer adapts piture image*/
+@media only screen and (min-width: 600px) {
+    #photo img {
+        min-height: 416.5px;
+        min-width: 280px;}    
+}
+
+/* responsive design for tablets and computer positions list and piture*/
+@media only screen and (min-width: 600px) {
+    
+    #list {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    #photo {
+        display: flex;
+        justify-content: center; 
+    }
+}
+
+

@@ -1,3 +1,4 @@
+/* display of the content in a column */
 body{
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px auto;
@@ -8,9 +9,52 @@ body{
     height: 100vh;
 }
 
+/* max height for the images */
 img {
     height: 208.5px;
 }
+
 main  {
     grid-area: achievements;
 }
+
+/* positioning of the title "Achievements" */
+#achievements {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* positioning of the piture of my CV */
+#cvimage {
+    align-self: flex-end;
+    float: right;
+    height: 210px;
+    width: 147px;
+}
+
+/* sizes of the logo on the footer */
+.logo {
+    height: 100px;
+    width: 100%;
+}
+
+/* positioning of the CV image and name */
+#cv {
+    grid-area: cv;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cv a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cv h3 {
+    position: relative;
+    bottom: 48%;
+}
+

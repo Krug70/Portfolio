@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/career.css" />
-</head>
-<body>
-    <header>
-
-    <h1>Career</h1>
-
-    </header>
-    <nav>
-        <a href="../index.html">Home Page</a>
-        <a href="hobbies.html">Hobbies & Interests</a>
-        <a href="blog.html">Blog</a>
-    </nav>
-
-
-    
-    <main>
-        <h4>Achievements</h4>
-
-        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Corporis accusamus autem unde, reiciendis repudiandae 
-            illum dicta molestias itaque id atque.
-        </section>
-        <mark>
-            These are some of the companies I have been working with and the school I attended.
-            Please click on the link to open the homepage of each.
-        </mark>
-        
-    
-        
-    
-        <nav>
-            
-            <a href="https://www.tomra.com/en">Tomra</a>
-            <a href="https://hireup.com.au/?source=google&medium=paid&campaign=6650565557&adg=84635937968&key=hireup&ad=498882088308&position=&type=e&gclid=CjwKCAjwybyJBhBwEiwAvz4G72Mge3GoWiHW9lfnaTIGCLl1uZoTKljy53gdpWBsy-1f7toVgpyYMRoCpDIQAvD_BwE">
-            Hireup</a>
-            <a href="https://www.coderacademy.edu.au/">Coder Academy</a>
-            <a href="https://www.unisa.edu.au/">University of South Australia</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Career</title>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/career.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Career</h1>
+        </header>
+        <!-- navbar to connect to the siblings and parent pages -->
+        <nav id="navbar">
+            <a href="../index.html">Home Page</a>
+            <a href="hobbies.html">Hobbies & Interests</a>
+            <a href="blog.html">Blog</a>
         </nav>
-        <img src="/img/CV image1.png" alt="Page 1 of my CV" class="cv">
-    
-        <div> 
-            <h3 id="CVpdf">Download my CV</h3>
-            
-        </div>
-    </main>
-
-</body>
+        <!-- title of the paragraph Achievements -->
+        <main style="display:flex; flex-direction:column;">
+            <h4 id="achievements">Achievements</h4>
+            <!-- image of my downloadable CV -->
+            <div>
+                <div id="cv">
+                    <a href="../img/CV_for_portfolio.pdf">
+                        <img src="../img/CV_image1.png" alt="Page 1 of my CV">
+                        <h3>Download my CV</h3>        
+                    </a>
+                </div>
+                 <!--paragraph with the title "Achievements"  -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit omnis dolores, incidunt vel harum libero nam quaerat doloribus fugiat voluptas vero commodi dolore ipsam itaque vitae ea velit cupiditate officia cumque, temporibus voluptatibus earum officiis. Nam inventore facilis exercitationem eum culpa soluta cumque fugit hic laudantium quae fugiat eveniet in nisi facere doloremque velit, maxime obcaecati ullam nostrum laboriosam consequuntur nemo iure? Quis neque consectetur autem fugit odio sapiente minima accusamus error, quod dolor. Dolor dolorum repellat sequi quia.
+                </p>
+            </div>
+            <!-- highlighted section that invite to click the hyperlinks underneath -->
+            <mark>These are some of the companies I have been working with and the school I attended.
+                Please click on the link to open the homepage of each.
+            </mark>
+            <!-- hyperlinks to previous employment companies and schools -->
+            <nav>
+                <a  href="https://www.tomra.com/en"><img src="../img/tomra_image.png" alt="Tomra logo" class="logo"></a>
+                <a href="https://hireup.com.au/?source=google&medium=paid&campaign=6650565557&adg=84635937968&key=hireup&ad=498882088308&position=&type=e&gclid=CjwKCAjwybyJBhBwEiwAvz4G72Mge3GoWiHW9lfnaTIGCLl1uZoTKljy53gdpWBsy-1f7toVgpyYMRoCpDIQAvD_BwE">
+                <img src="../img/Hireup_image.png" alt="Hireup logo" class="logo"></a>
+                <a href="https://www.coderacademy.edu.au/"><img src="../img/coder_academy_image.png" alt="Coder Academy logo" class="logo"></a>
+                <a href="https://www.unisa.edu.au/"><img src="../img/UniSA_image.png" alt="UniSA logo" class="logo"></a>
+            </nav>
+        </main>
+    </body>
 </html>

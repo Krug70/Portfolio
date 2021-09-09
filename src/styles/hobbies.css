@@ -1,6 +1,4 @@
-
-
-
+/* displaying of the parts of the page */
 body{
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px auto;
@@ -14,14 +12,32 @@ div {
     grid-area:article;
 }
 
-.bike{
-    width: 400px;
+/* next 2 id size the images */
+#bike{
+    width: 325px;
 }
 
-.pd{
+#pd{
     width: 350px;
 }
 
+/* centering of the single articles */
 div{
     justify-content: center;
 }
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+/* responsive design for tablets and computer */
+@media only screen and (min-width: 600px){
+    h2 {
+    align-self: center;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+
